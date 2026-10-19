@@ -51,3 +51,8 @@
 @media(max-width:700px){.heading-annotation{font-size:12px}.campaigns-table>tbody>.campaign-assets-row>td{padding:0 10px 12px}.campaign-assets-note{gap:10px}}
 
 .carousel-button:hover:not(:disabled){color:var(--accent);border-color:var(--accent);background:var(--mint)}.link{color:var(--accent)}
+
+.assets-strategy-tabs{margin:0 0 18px;gap:9px}.assets-strategy-tabs>button{font-size:12px;padding:8px 16px}
+.campaigns-table{min-width:760px}.campaigns-table>thead>tr>th:first-child{width:31%}.campaigns-table>thead>tr>th:nth-child(2){width:17%}.campaigns-table>thead>tr>th:nth-child(3){width:24%}.campaigns-table>thead>tr>th:nth-child(4){width:28%}
+.campaign-summary-row .campaign-strategy-select{max-width:220px}.campaigns-table .campaign-kit-name{font-size:12px;line-height:1.5;font-weight:500;text-align:left;color:var(--accent)}.campaign-kit-none{font-size:11px;color:#9299a5}
+@media(max-width:700px){.assets-strategy-tabs{gap:5px}.assets-strategy-tabs>button{font-size:11px;padding:8px 12px}.campaigns-table{min-width:760px}}
