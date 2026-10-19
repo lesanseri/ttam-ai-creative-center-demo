@@ -56,3 +56,10 @@
 .campaigns-table{min-width:760px}.campaigns-table>thead>tr>th:first-child{width:31%}.campaigns-table>thead>tr>th:nth-child(2){width:17%}.campaigns-table>thead>tr>th:nth-child(3){width:24%}.campaigns-table>thead>tr>th:nth-child(4){width:28%}
 .campaign-summary-row .campaign-strategy-select{max-width:220px}.campaigns-table .campaign-kit-name{font-size:12px;line-height:1.5;font-weight:500;text-align:left;color:var(--accent)}.campaign-kit-none{font-size:11px;color:#9299a5}
 @media(max-width:700px){.assets-strategy-tabs{gap:5px}.assets-strategy-tabs>button{font-size:11px;padding:8px 12px}.campaigns-table{min-width:760px}}
+
+/* Keep campaign controls aligned with the primary value in each column. */
+.campaigns-table>thead>tr>th:first-child{width:26%}.campaigns-table>thead>tr>th:nth-child(2){width:17%}.campaigns-table>thead>tr>th:nth-child(3){width:28%}.campaigns-table>thead>tr>th:nth-child(4){width:29%}
+.campaigns-table>thead>tr>th{padding:13px 14px}.campaigns-table>tbody>.campaign-summary-row>td{padding:14px;vertical-align:top}
+.campaign-assets-toggle{min-height:34px;line-height:1.4}.campaign-summary-row .campaigns-cpa{display:flex;align-items:center;min-height:34px;line-height:1.4}.campaign-summary-row .campaigns-sub{margin-top:1px;line-height:1.5}
+.campaign-summary-row .campaign-strategy-select{display:block;max-width:210px;min-height:34px;margin:0;padding:8px 28px 8px 10px;box-sizing:border-box}
+.campaigns-table .campaign-kit-name{display:flex;align-items:center;min-height:34px;padding:0;line-height:1.4;white-space:normal}.campaign-kit-none{display:flex;align-items:center;min-height:34px}
