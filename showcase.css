@@ -87,3 +87,10 @@
 .campaign-multi-menu{position:fixed;z-index:130;background:#fff;border:1px solid #e0e5e9;border-radius:7px;padding:6px;box-shadow:0 8px 30px #273b4a24;color:#303b45}
 .campaign-multi-search{display:block;border-bottom:1px solid #edf0f2;padding:2px 5px 8px;margin-bottom:5px}.campaign-multi-search input{width:100%;border:0;background:none;outline:none!important;font:12px/20px Arial,Helvetica,sans-serif;padding:5px 2px;color:#303b45}.campaign-multi-search input::placeholder{color:#9aa2ab}
 .campaign-multi-option{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;padding:8px;border:0;border-radius:4px;background:#fff;text-align:left;cursor:pointer}.campaign-multi-option:hover,.campaign-multi-option:focus-visible{background:#f4f7f8}.campaign-multi-option[aria-selected=true]{background:#f5f9f9}.campaign-multi-option .automation-chip{max-width:none;font-size:11px;padding:3px 8px}.multi-check{width:17px;height:17px;color:var(--accent)}.multi-check svg{width:16px;height:16px}.campaign-multi-empty{padding:12px;font-size:11px;color:#8a929d}
+
+/* Keep campaign identity compact even when the table grows wider. */
+.campaigns-table>thead>tr>th:first-child{width:220px}
+.campaigns-table>thead>tr>th:nth-child(2){width:110px}
+.campaigns-table>thead>tr>th:nth-child(3),.campaigns-table>thead>tr>th:nth-child(5){width:calc((100% - 592px)/2)}
+.campaigns-table>thead>tr>th:nth-child(4){width:190px}
+.campaigns-table>thead>tr>th:nth-child(6){width:72px}
