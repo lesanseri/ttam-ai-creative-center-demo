@@ -20,3 +20,5 @@ body.sd-open{overflow:hidden}.sd-studio{position:fixed;inset:0;z-index:300;backg
 .seedance-auto-button{padding:4px 0;white-space:nowrap}
 @media(max-width:950px) and (min-width:701px){.strategy-intro{gap:16px;grid-template-columns:minmax(0,1fr) auto}.strategy-copy .strategy-title-row h2{font-size:22px}.strategy-copy>p{font-size:12px}.seedance-auto-button{font-size:10px}}
 @media(max-width:700px){.strategy-intro{grid-template-columns:1fr;gap:12px}.strategy-cta{padding-top:0;justify-self:start}.strategy-copy>p{font-size:13px}}
+
+.strategy-intro>.strategy-copy{padding:0}
