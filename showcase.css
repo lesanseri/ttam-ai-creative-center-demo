@@ -11,17 +11,17 @@
 @media(min-width:701px){
  .showcase-content{height:var(--showcase-stage);min-height:var(--showcase-stage);max-height:var(--showcase-stage)}
  .all-showcases .showcase-card{flex:0 0 auto;width:calc(var(--all-case-height)*9/16);min-width:0}.all-showcases .creative-open{height:var(--all-case-height)}
- .strategy-showcases{grid-template-columns:minmax(210px,25%) minmax(0,1fr);gap:30px}.strategy-demo{display:flex;flex-direction:column;height:var(--showcase-stage)}.demo-open{height:calc(var(--showcase-stage) - 28px);aspect-ratio:auto;flex-shrink:0}.strategy-demo figcaption{margin-top:10px}
+ .strategy-showcases{grid-template-columns:270px minmax(0,1fr);gap:30px}.strategy-demo{display:flex;flex-direction:column;height:var(--showcase-stage)}.demo-open{height:calc(var(--showcase-stage) - 28px);aspect-ratio:auto;flex-shrink:0}.strategy-demo figcaption{margin-top:10px}
  .strategy-right{height:var(--showcase-stage);min-height:0}.strategy-examples{margin-top:auto;min-height:0}.strategy-examples .showcase-card{flex:0 0 auto;width:calc(var(--strategy-case-height)*9/16);min-width:0}.strategy-examples .creative-open{height:var(--strategy-case-height)}
  .strategy-examples .showcase-rail{height:calc(var(--strategy-case-height) + 28px)}.showcase-card figcaption{margin-top:9px;font-size:11px}
 }
 @media(min-width:1550px){.showcase-header h1{font-size:32px}.strategy-title-row h2{font-size:27px}.how-button{font-size:12px;padding:9px 17px;min-height:36px}.strategy-intro>p{font-size:13px}.gallery-title h3{font-size:17px}}
 @media(min-width:701px) and (max-width:1000px){.strategy-title-row h2{font-size:22px}.strategy-showcases{gap:25px}.how-button{font-size:11px;padding:9px 12px}.strategy-intro>p{font-size:12px}.gallery-title>span{display:none}}
-@media(min-width:701px) and (max-width:850px){.strategy-title-row{flex-wrap:wrap;gap:10px}.strategy-intro{padding-bottom:10px}.strategy-intro>p{font-size:12px;margin-top:10px}.strategy-eyebrow{margin-bottom:6px}:root{--strategy-case-height:235px}.strategy-showcases{grid-template-columns:27% minmax(0,1fr)}}
+@media(min-width:701px) and (max-width:850px){.strategy-title-row{flex-wrap:wrap;gap:10px}.strategy-intro{padding-bottom:10px}.strategy-intro>p{font-size:12px;margin-top:10px}.strategy-eyebrow{margin-bottom:6px}:root{--strategy-case-height:235px}.strategy-showcases{grid-template-columns:270px minmax(0,1fr)}}
 @media(max-width:700px){.showcase-header h1{font-size:28px}.showcase-header p{font-size:13px}.strategy-title-row{flex-wrap:wrap;gap:12px}.strategy-title-row h2{font-size:23px;white-space:normal}.strategy-intro>p{font-size:13px}.how-button{font-size:12px;min-height:36px;padding:9px 15px}.gallery-heading h2{font-size:17px}.strategy-tabs>button{font-size:12px;padding:8px 12px}.account-section-head h1{font-size:23px}}
-/* Align the demo bottom with the industry caption row beneath the showcases. */
-@media(min-width:701px){.strategy-showcases{grid-template-columns:minmax(240px,28%) minmax(0,1fr)}.strategy-demo{height:var(--showcase-stage)}.demo-open{height:100%}.demo-open img{object-position:center bottom}.strategy-examples .showcase-rail{height:auto;padding-bottom:0;align-items:flex-start}}
-@media(min-width:701px) and (max-width:850px){.strategy-showcases{grid-template-columns:29% minmax(0,1fr)}}
+/* Keep portrait demos fixed at 270 × 480; only the right column grows. */
+@media(min-width:701px){.strategy-showcases{grid-template-columns:270px minmax(0,1fr)}.strategy-demo{width:270px;height:var(--showcase-stage)}.demo-open{width:270px;height:480px;aspect-ratio:9/16}.demo-open img{object-position:center bottom}.strategy-examples .showcase-rail{height:auto;padding-bottom:0;align-items:flex-start}}
+@media(min-width:701px) and (max-width:850px){.strategy-showcases{grid-template-columns:270px minmax(0,1fr)}}
 @media(max-width:700px){.strategy-demo{width:min(76%,320px)}}
 
 /* Shared hierarchy: page title, section title, primary value, supporting text. */
