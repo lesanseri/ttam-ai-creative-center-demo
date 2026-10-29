@@ -54,8 +54,8 @@
 .campaigns-table>tbody>.campaign-assets-row>td{padding:0 16px 16px;background:#fafcfc;border-bottom:1px solid var(--db-rule)}
 .campaign-assets-detail{margin-left:22px;border-left:1px solid #e3e8e9;background:#fff;overflow:hidden}
 .campaign-assets-table{width:100%;min-width:0;table-layout:fixed;border-collapse:collapse}
-.campaigns-table .campaign-assets-table th{width:14.5%;padding:10px 16px;font-size:10px;line-height:16px;font-weight:500;color:#7d8590;text-align:left;background:#fff;border-bottom:1px solid var(--db-rule)}
-.campaigns-table .campaign-assets-table th:first-child{width:42%;text-align:left;padding-left:16px}
+.campaigns-table .campaign-assets-table th{width:calc((100% - 360px)/4);padding:10px 16px;font-size:10px;line-height:16px;font-weight:500;color:#7d8590;text-align:left;background:#fff;border-bottom:1px solid var(--db-rule)}
+.campaigns-table .campaign-assets-table th:first-child{width:360px;text-align:left;padding-left:16px}
 .campaigns-table .campaign-assets-table td{padding:14px 16px;font-size:12px;line-height:18px;border-bottom:1px solid #edf0f2;vertical-align:top;text-align:left;height:80px;box-sizing:border-box}
 .campaigns-table .campaign-assets-table td:first-child{text-align:left}.campaign-assets-table tr:last-child td{border-bottom:0}.campaign-assets-table tbody tr:hover{background:#fcfdfd}
 .campaign-asset-identity{display:grid;grid-template-columns:32px minmax(0,1fr);align-items:start;gap:12px;min-width:0;min-height:52px}
