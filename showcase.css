@@ -94,3 +94,7 @@
 .campaigns-table>thead>tr>th:nth-child(3),.campaigns-table>thead>tr>th:nth-child(5){width:calc((100% - 592px)/2)}
 .campaigns-table>thead>tr>th:nth-child(4){width:190px}
 .campaigns-table>thead>tr>th:nth-child(6){width:72px}
+
+/* All rows use the same fixed control widths. */
+.campaign-multi-trigger{width:220px;min-width:220px;max-width:220px}
+.campaign-strategy-select{width:150px;min-width:150px;max-width:150px}
