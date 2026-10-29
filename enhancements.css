@@ -8,3 +8,17 @@
 @media(max-width:1050px){.enhancement-capability-grid{gap:10px}.enhancement-card-copy{padding:10px 9px 12px}.enhancement-card-title{font-size:11px;gap:3px}.enhancement-card-title svg{display:none}.enhancement-card-summary{font-size:9px}.enhancement-ad-card{right:5px;bottom:7px;padding:6px 4px;font-size:6px}.enhancement-ad-card>b{font-size:10px}.enhancement-captions{right:5px;font-size:5px}.enhancement-captions b{font-size:5px}.enhancement-cta-example{right:5px;bottom:9px;gap:4px;font-size:8px;padding:5px 7px}}
 @media(max-width:700px){.enhancement-capability-grid{display:flex;overflow-x:auto;gap:12px;scroll-snap-type:x proximity;padding:3px 2px 8px;margin:0 -2px}.enhancement-capability{flex:0 0 185px;scroll-snap-align:start}.enhancement-card-title{font-size:12px}.enhancement-card-summary{font-size:10px}.enhancement-card-copy{padding:11px}.enhancement-discovery{margin-top:24px}.generation-showcase{margin-top:22px}.enhancement-example-dialog{padding:40px 20px 22px;width:calc(100% - 24px)}.enhancement-example-layout{grid-template-columns:1fr;gap:24px}.enhancement-example-visual .enhancement-comparison{aspect-ratio:1.5;max-height:42dvh}.enhancement-example-copy h2{font-size:23px;margin-top:8px}.enhancement-example-copy p{margin-bottom:16px}.enhancement-example-copy dl>div{padding:12px 0}}
 @media(prefers-reduced-motion:reduce){.enhancement-capability,.enhancement-card-title svg{transition:none}}
+
+/* One discovery row for all eight strategies. */
+.generation-showcase>.trending-strategy-tabs{margin-top:0;overflow-x:auto;scrollbar-width:none;flex-wrap:nowrap;padding:4px 0 2px;gap:4px}
+.trending-strategy-tabs>button{flex:none;padding-left:13px;padding-right:13px}
+.trending-strategy-tabs>button:has(.new-label){margin-right:24px}
+.enhancement-showcase-open>.enhancement-comparison,.enhancement-demo-open>.enhancement-comparison{width:100%;height:100%;aspect-ratio:9/16}
+.enhancement-showcase-open .enhancement-image-label{top:49px}
+.enhancement-demo-open .enhancement-image-label{top:12px;font-size:10px;padding:4px 7px}
+.enhancement-demo-open .enhancement-ad-card{font-size:10px;padding:12px;bottom:24px}
+.enhancement-demo-open .enhancement-ad-card>b{font-size:19px}
+.enhancement-demo-open .enhancement-cta-example{font-size:12px;padding:10px 14px;bottom:32px}
+.enhancement-demo-open .enhancement-captions{font-size:9px;bottom:28px}
+.enhancement-demo-open .enhancement-captions b{font-size:8px}
+.enhancement-strategy .strategy-title-row h2{white-space:normal}
