@@ -15,3 +15,21 @@
 .kit-block-colors{display:grid;grid-template-rows:repeat(3,1fr)}.kit-block-colors>span{display:block}
 .kit-examples .kit-cover.kit-cover-blocks{aspect-ratio:1.8}.bk-editor-preview .kit-cover.kit-cover-blocks{grid-template-columns:76% 24%;grid-template-rows:1fr;aspect-ratio:1.25}.bk-editor-preview .kit-block-logo{padding:20px 12px}.bk-editor-preview .kit-block-logo>span{font-size:24px}.kit-welcome-identity .kit-cover.kit-cover-blocks{aspect-ratio:1.8}
 @media(max-width:700px){.kit-block-logo>span{font-size:32px}.bk-editor-preview .kit-cover.kit-cover-blocks{aspect-ratio:1.8}}
+
+/* Compact square account-video picker shared by every strategy. */
+.strategy-apply-form{max-width:650px}
+.strategy-apply-form .apply-account-videos{margin:20px 0 24px}
+.apply-video-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 10px;font-size:11px;color:#8a929d}
+.apply-video-toolbar .link{padding:0;font-size:11px}
+.apply-account-video-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px 10px}
+.apply-account-video{display:block;min-width:0;cursor:pointer}
+.apply-video-thumb{position:relative;display:block;width:100%;aspect-ratio:1/1;overflow:hidden;border:1px solid #e3e8eb;border-radius:6px;background:#f4f6f7}
+.apply-video-thumb>img{display:block;width:100%;height:100%;object-fit:cover}
+.apply-video-thumb>input{position:absolute;top:6px;right:6px;width:15px;height:15px;margin:0;accent-color:var(--accent);cursor:pointer;z-index:1}
+.apply-account-video:has(input:checked) .apply-video-thumb{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.apply-account-video:has(input:focus-visible) .apply-video-thumb{outline:2px solid var(--accent);outline-offset:3px}
+.apply-video-play{position:absolute;bottom:6px;right:6px;display:grid;place-items:center;width:21px;height:21px;border-radius:50%;background:#fffffff0;color:#303b45;pointer-events:none}
+.apply-video-play>svg{width:11px;height:11px}
+.apply-video-name{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:10px/16px Arial,Helvetica,sans-serif;color:#747e89;margin-top:5px}
+.apply-video-empty{font-size:12px;color:#8a929d;grid-column:1/-1;padding:18px 0}
+@media(max-width:700px){.apply-account-video-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:10px 8px}.apply-video-name{font-size:9px}}
