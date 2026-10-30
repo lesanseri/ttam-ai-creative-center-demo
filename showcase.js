@@ -6,6 +6,11 @@ const showcaseStrategies = {
   seedance: {name:'Seedance', headline:'Bring your product images to life.', description:'Turn product images into video scenes with new settings and camera motion. Explore what this can look like across industries.', demo:'demo-seedance.png', caption:'Product image → New video scene', change:'New scenes and camera motion', steps:[['Start with a product image','Choose an approved product photo as the visual reference.'],['Explore a new scene','Create settings and camera motion around your product reference.'],['Check the details','Review the product appearance and message before using the result.']]}
 };
 const showcaseItems = [
+{id:'seed-matcha',strategy:'seedance',image:'audio-matcha.png',industry:'Food & beverage',name:'A fresh scene for your daily matcha'},
+{id:'seed-denim',strategy:'seedance',image:'remix-denim.png',industry:'Apparel & accessories',name:'Bring everyday denim into a new setting'},
+{id:'seed-running',strategy:'seedance',image:'audio-running.png',industry:'Sports & fitness',name:'A new perspective on your next run'},
+{id:'seed-home',strategy:'seedance',image:'remix-laundry.png',industry:'Home & living',name:'Turn everyday comfort into a story'},
+
 {id:'fragrance',strategy:'seedance',image:'seedance-fragrance.png',industry:'Beauty & personal care',name:'A new light on fragrance'},
 {id:'beauty',strategy:'overlay',image:'overlay-beauty.png',industry:'Beauty & personal care',name:'Let the selling point stand out'},
 {id:'denim',strategy:'remix',image:'remix-denim.png',industry:'Apparel & accessories',name:'Made for every day'},
