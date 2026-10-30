@@ -33,3 +33,17 @@
 .apply-video-name{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:10px/16px Arial,Helvetica,sans-serif;color:#747e89;margin-top:5px}
 .apply-video-empty{font-size:12px;color:#8a929d;grid-column:1/-1;padding:18px 0}
 @media(max-width:700px){.apply-account-video-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:10px 8px}.apply-video-name{font-size:9px}}
+
+/* Compact Brand Kit cards; scope and strategy details live in the editor. */
+.brand-kit-compact .kit-module-head{margin-bottom:16px;min-height:0}
+.kit-mini-list{display:flex;flex-wrap:wrap;gap:14px;align-items:stretch}
+.kit-compact-card{display:flex;flex-direction:column;gap:10px;flex:0 0 152px;width:152px;padding:10px;border:1px solid #e6e9ed;border-radius:10px;background:#fff;color:#303b46;text-align:left;cursor:pointer;transition:box-shadow .15s,border-color .15s}
+.kit-compact-card:hover{border-color:#109c9866;box-shadow:0 3px 12px #182c3810}
+.kit-compact-card:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.kit-compact-cover{display:grid;place-items:center;width:130px;height:130px;border-radius:6px;font:500 36px/1 Georgia,serif}
+.kit-compact-name{display:block;width:100%;font:500 12px/18px Arial,Helvetica,sans-serif;min-height:36px;overflow-wrap:anywhere}
+.kit-compact-create .kit-compact-cover{border:1px dashed #d5dbe0;background:#fafbfc;color:#88939c}
+.kit-compact-create .kit-compact-name{color:#7b858f}
+.kit-compact-create svg{width:23px;height:23px;stroke:currentColor;fill:none;stroke-width:1.5}
+.bk-editor-management{display:flex;align-items:center;gap:16px}
+@media(max-width:700px){.kit-mini-list{gap:12px}.bk-editor-management{gap:10px}.bk-editor-management .btn{font-size:11px;padding:7px 8px}}
