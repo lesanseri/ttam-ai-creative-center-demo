@@ -38,19 +38,7 @@ function aiOverviewHTML(){
  }).join('')+'</div><div id="overview-trend" aria-live="polite">'+overviewChartHTML()+'</div></section>';
 }
 function refreshAIOverview(){const region=document.querySelector('.ai-overview');if(region)region.outerHTML=aiOverviewHTML();}
-function openOverviewRecommendation(id){
- const d=overviewMetrics.find(m=>m.id===id),rec=d?.recommendation;if(!rec)return;
- openStrategyApplication(rec.strategy);
- const form=document.querySelector('#strategy-apply-form');form.dataset.overviewRecommendation=id;
- form.querySelector('h2').textContent=rec.title;form.querySelector('h2+p').textContent=rec.description;
- const assets=overviewRecommendationAssets(rec),ids=new Set(assets.map(a=>a.id));
- form.querySelectorAll('[name="sourceVideos"]').forEach(input=>input.checked=ids.has(input.value));
- const campaigns=new Set(assets.flatMap(a=>a.uses.filter(u=>u.active).map(u=>u.campaign)));
- form.querySelectorAll('[name="campaigns"]').forEach(input=>input.checked=campaigns.has(input.value));
- form.querySelector('[name="mode"]').value='review';
- form.querySelector('.apply-mode-hint').textContent='Review each new version before it is added to a campaign.';
- updateApplyVideoSelection();
-}
+function openOverviewRecommendation(id){openMetricStrategyRecommendations(id);}
 function openCreativeLabels(){
  ensureCreativeLabels();let modal=document.querySelector('#overview-label-dialog');if(!modal){modal=document.createElement('dialog');modal.id='overview-label-dialog';modal.className='brand-kit-dialog ov-label-dialog';document.body.append(modal);}
  const unlabeled=state.assets.filter(a=>a.status!=='rejected'&&!state.aiLabels[a.id]),assets=unlabeled.length?unlabeled:state.assets.filter(a=>a.status!=='rejected');
@@ -67,4 +55,4 @@ document.addEventListener('click',e=>{
 document.addEventListener('change',e=>{if(e.target.id==='overview-period'){overviewPeriod=e.target.value;refreshAIOverview();document.querySelector('#overview-period').focus();}});
 document.addEventListener('submit',e=>{if(e.target.id!=='overview-label-form')return;e.preventDefault();const data=new FormData(e.target),ids=data.getAll('creatives');if(!ids.length){document.querySelector('#ov-label-error').textContent='Choose at least one creative.';return;}ids.forEach(id=>{const a=getA(id);state.aiLabels[id]=data.get('label')==='suggested'?(a.strategy==='seedance'?'generated':'assisted'):data.get('label');});save();document.querySelector('#overview-label-dialog').close();refreshAIOverview();notify('AI labels applied to '+ids.length+' creative'+(ids.length===1?'':'s')+'.');});
 
-document.addEventListener('submit',e=>{if(e.target.id==='strategy-apply-form'&&e.target.dataset.overviewRecommendation&&!document.querySelector('#showcase-dialog').open){state.overviewRecommendations=state.overviewRecommendations||{};state.overviewRecommendations[e.target.dataset.overviewRecommendation]=true;save();refreshAIOverview();}});
+
