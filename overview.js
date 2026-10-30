@@ -1,7 +1,7 @@
 let overviewMetric='ctr',overviewPeriod='current';
 const overviewDays={current:['10/12','10/13','10/14','10/15','10/16','10/17','10/18'],previous:['10/05','10/06','10/07','10/08','10/09','10/10','10/11']};
 const overviewMetrics=[
- {id:'spend',label:'Spend',icon:'chart',unit:'USD',step:500,decimals:2,current:[980,1120,1090,1240,1310,1290,1390],previous:[930,1010,1080,1150,1200,1260,1374]},
+ {id:'spend',label:'Spend',icon:'chart',unit:'USD',step:500,decimals:2,current:[980,1120,1090,1240,1310,1290,1390],previous:[930,1010,1080,1150,1200,1260,1374],recommendation:{title:'Expand creative coverage',strategy:'remix',assetIds:['s1','s2','a1'],description:'Explore more video variations and language versions when creative coverage limits delivery.'}},
  {id:'ltv',label:'LTV',icon:'bag',unit:'USD',step:10,decimals:2,current:[40.6,41.1,41.5,41.2,42,42.4,42.8],previous:[39.5,40.1,40.4,40.8,40.7,41,41.31]},
  {id:'ctr',label:'CTR',icon:'arrow',unit:'%',step:.5,decimals:2,current:[1.68,1.63,1.58,1.54,1.49,1.45,1.42],previous:[1.8,1.77,1.73,1.69,1.66,1.64,1.62],recommendation:{title:'Make your CTA stand out',strategy:'enhance-cta',assetIds:['s1','s2','a1'],description:'Test a clearer call to action on these creatives. Review the campaign scope and Brand Kit before applying.'}},
  {id:'cvr',label:'CVR',icon:'layers',unit:'%',step:1,decimals:2,current:[3.31,3.45,3.4,3.48,3.51,3.54,3.58],previous:[3.2,3.28,3.24,3.31,3.34,3.4,3.44],recommendation:{title:'Highlight product benefits',strategy:'overlay',assetIds:['s1','s2','a2'],description:'Test a more visible product benefit using visual callouts. Review the selected videos and campaign settings.'}},
