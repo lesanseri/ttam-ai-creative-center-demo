@@ -29,7 +29,7 @@ const showcaseItems = [
 {id:'audio-denim',strategy:'audio',image:'remix-denim.png',industry:'Apparel & accessories',name:'Find a new rhythm'}
 ];
 let selectedShowcase='all', showcaseIndustry='all';
-const scAsset=f=>'assets/'+f;
+const scAsset=f=>/^https:\/\//.test(f)?f:'assets/'+f;
 const scIcon=kind=>'<svg viewBox="0 0 24 24" aria-hidden="true">'+({next:'<path d="m9 5 7 7-7 7"/>',prev:'<path d="m15 5-7 7 7 7"/>',play:'<path d="m9 5 11 7-11 7Z" fill="currentColor" stroke="none"/>',expand:'<path d="M9 3H3v6m12-6h6v6M3 15v6h6m12-6v6h-6"/>',close:'<path d="m6 6 12 12M18 6 6 18"/>',arrow:'<path d="M4 12h15m-5-5 5 5-5 5"/>'}[kind]||'')+'</svg>';
 function showcaseCard(item){return '<figure class="showcase-card"><div class="showcase-video-frame"><button class="creative-open" data-show="preview:'+item.id+'" aria-label="Play '+esc(item.name)+'"><img src="'+scAsset(item.image)+'" alt="'+esc(item.name)+'" loading="lazy" decoding="async"><span class="strategy-tag">'+showcaseStrategies[item.strategy].name+'</span><span class="creative-expand">'+scIcon('play')+'</span></button>'+(item.strategy==='seedance'?'<button class="showcase-similar-button" data-studio-entry="'+esc(item.id)+'">Get similar one</button>':'')+'</div><figcaption>'+item.industry+'</figcaption></figure>';}
 function carouselArrows(){return '<div class="carousel-arrows"><button class="carousel-button" data-show="scroll:prev" aria-label="Previous showcases">'+scIcon('prev')+'</button><button class="carousel-button" data-show="scroll:next" aria-label="Next showcases">'+scIcon('next')+'</button></div>';}

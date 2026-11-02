@@ -1,0 +1,276 @@
+{
+  "license": "https://unsplash.com/license",
+  "note": "Stock photography used as demo covers, not actual Seedance outputs or advertiser endorsements. Other rights such as trademarks and likeness are not covered by the copyright license.",
+  "photos": [
+    {
+      "case": {
+        "id": "real-case-1",
+        "strategy": "seedance",
+        "image": "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&h=900&q=80",
+        "industry": "Beauty & personal care",
+        "name": "A closer look at fragrance"
+      },
+      "source": {
+        "id": "1541643600914-78b084683601",
+        "url": "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&h=900&q=80",
+        "size": 41790,
+        "hash": "4d95c47fcb3c7a85aedc9a72f8e793a55f4e8a9a85c8ad5c7b404a0bd8be6234"
+      }
+    },
+    {
+      "case": {
+        "id": "real-case-2",
+        "strategy": "seedance",
+        "image": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=600&h=900&q=80",
+        "industry": "Food & beverage",
+        "name": "A colorful lunch break"
+      },
+      "source": {
+        "id": "1511690743698-d9d85f2fbf38",
+        "url": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=600&h=900&q=80",
+        "size": 110402,
+        "hash": "a526679c2386d43bee41643636bf8d9e1f2a5b445f7e00aa0e5e2306ae43409f"
+      }
+    },
+    {
+      "case": {
+        "id": "real-case-3",
+        "strategy": "seedance",
+        "image": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&h=900&q=80",
+        "industry": "Apparel & accessories",
+        "name": "Style for everyday"
+      },
+      "source": {
+        "id": "1490481651871-ab68de25d43d",
+        "url": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&h=900&q=80",
+        "size": 82334,
+        "hash": "8c72bdfc2478791e452c16708e5c5407d11b6699e15e1c4bd3aefa481114fef3"
+      }
+    },
+    {
+      "case": {
+        "id": "real-case-4",
+        "strategy": "seedance",
+        "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=600&h=900&q=80",
+        "industry": "Sports & fitness",
+        "name": "Make every workout count"
+      },
+      "source": {
+        "id": "1517836357463-d25dfeac3438",
+        "url": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=600&h=900&q=80",
+        "size": 128508,
+        "hash": "156aac1b8328c460f765a54f9fb01d70176243bb45d519c6e5195691cd315bdc"
+      }
+    },
+    {
+      "case": {
+        "id": "real-case-5",
+        "strategy": "seedance",
+        "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&h=900&q=80",
+        "industry": "Home & living",
+        "name": "A more welcoming home"
+      },
+      "source": {
+        "id": "1600210492486-724fe5c67fb0",
+        "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&h=900&q=80",
+        "size": 111978,
+        "hash": "f2a8daacbd981a47966b0715eaab8d20df16b93623500d6db7deec2e6d19ecf8"
+      }
+    },
+    {
+      "case": {
+        "id": "real-case-6",
+        "strategy": "seedance",
+        "image": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&h=900&q=80",
+        "industry": "Beauty & personal care",
+        "name": "Your daily beauty essentials"
+      },
+      "source": {
+        "id": "1608571423902-eed4a5ad8108",
+        "url": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&h=900&q=80",
+        "size": 47926,
+        "hash": "6c5dfd07fdd1c0a4a598dd8af383eea1ec55832cdbc5c502fa0856dd0b1fca10"
+      }
+    },
+    {
+      "case": {
+        "id": "real-case-7",
+        "strategy": "seedance",
+        "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&h=900&q=80",
+        "industry": "Food & beverage",
+        "name": "Fresh ingredients, real flavor"
+      },
+      "source": {
+        "id": "1540420773420-3366772f4999",
+        "url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&h=900&q=80",
+        "size": 178614,
+        "hash": "741158bc1ae14aa6ee413f3072f5fdeeb0701830e04cc97303cc7c46cb59cada"
+      }
+    },
+    {
+      "case": {
+        "id": "real-case-8",
+        "strategy": "seedance",
+        "image": "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&h=900&q=80",
+        "industry": "Apparel & accessories",
+        "name": "Find your next outfit"
+      },
+      "source": {
+        "id": "1483985988355-763728e1935b",
+        "url": "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&h=900&q=80",
+        "size": 74458,
+        "hash": "2047a44f85a88a8181ef2e039f1ef976003ea7373d7085552c228b035618a781"
+      }
+    },
+    {
+      "case": {
+        "id": "real-case-9",
+        "strategy": "seedance",
+        "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&h=900&q=80",
+        "industry": "Sports & fitness",
+        "name": "Find your training space"
+      },
+      "source": {
+        "id": "1534438327276-14e5300c3a48",
+        "url": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&h=900&q=80",
+        "size": 119112,
+        "hash": "26003f19582bd42817f479097eef2aa0815184057bf0cddc636bc360f2ff6cd7"
+      }
+    },
+    {
+      "case": {
+        "id": "real-case-10",
+        "strategy": "seedance",
+        "image": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=600&h=900&q=80",
+        "industry": "Home & living",
+        "name": "Comfort in every corner"
+      },
+      "source": {
+        "id": "1616486338812-3dadae4b4ace",
+        "url": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=600&h=900&q=80",
+        "size": 81611,
+        "hash": "ae456d4204acb242db7098a7369abe9a46037850c57ce35d3a5cb933cea40280"
+      }
+    },
+    {
+      "case": {
+        "id": "real-case-11",
+        "strategy": "seedance",
+        "image": "https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=600&h=900&q=80",
+        "industry": "Beauty & personal care",
+        "name": "Simple care, everyday"
+      },
+      "source": {
+        "id": "1556229010-6c3f2c9ca5f8",
+        "url": "https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=600&h=900&q=80",
+        "size": 31024,
+        "hash": "70cbb716d3f3068ba8ae8908edc51abbf4d6649e2dbeb5d59c0815edeb5d1049"
+      }
+    },
+    {
+      "case": {
+        "id": "real-case-12",
+        "strategy": "seedance",
+        "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&h=900&q=80",
+        "industry": "Food & beverage",
+        "name": "A bowl full of goodness"
+      },
+      "source": {
+        "id": "1512621776951-a57141f2eefd",
+        "url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&h=900&q=80",
+        "size": 143791,
+        "hash": "5d6e8d379fcb894d802a4005a944431f0be63fd1bf636badf5b4be7b63afe92f"
+      }
+    },
+    {
+      "case": {
+        "id": "real-case-13",
+        "strategy": "seedance",
+        "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=600&h=900&q=80",
+        "industry": "Apparel & accessories",
+        "name": "A fresh take on denim"
+      },
+      "source": {
+        "id": "1541099649105-f69ad21f3246",
+        "url": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=600&h=900&q=80",
+        "size": 96134,
+        "hash": "7cc6f0741ba2e3ffd6ea04cc4ef4bc2273bb037f3231d9996f829d4d77d2d752"
+      }
+    },
+    {
+      "case": {
+        "id": "real-case-14",
+        "strategy": "seedance",
+        "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=600&h=900&q=80",
+        "industry": "Home & living",
+        "name": "A brighter everyday kitchen"
+      },
+      "source": {
+        "id": "1484154218962-a197022b5858",
+        "url": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=600&h=900&q=80",
+        "size": 71349,
+        "hash": "0a4120cdc4492a183e623ce31ab5daeb95b867946eb3bf3b3dfff471350156bd"
+      }
+    },
+    {
+      "case": {
+        "id": "real-case-15",
+        "strategy": "seedance",
+        "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&h=900&q=80",
+        "industry": "Beauty & personal care",
+        "name": "Fresh skincare details"
+      },
+      "source": {
+        "id": "1556228720-195a672e8a03",
+        "url": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&h=900&q=80",
+        "size": 32464,
+        "hash": "cd36db977a15d6f1262531bfa15a929679eff9d3e62c96817a17ec7ce55293a0"
+      }
+    },
+    {
+      "case": {
+        "id": "real-case-16",
+        "strategy": "seedance",
+        "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=600&h=900&q=80",
+        "industry": "Food & beverage",
+        "name": "Your everyday balanced plate"
+      },
+      "source": {
+        "id": "1490645935967-10de6ba17061",
+        "url": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=600&h=900&q=80",
+        "size": 178292,
+        "hash": "7ba3a5ba4549cdf099b95b230b1a5d19ac0b325be725e7c84af5096a09a0f548"
+      }
+    },
+    {
+      "case": {
+        "id": "real-case-17",
+        "strategy": "seedance",
+        "image": "https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&fit=crop&w=600&h=900&q=80",
+        "industry": "Beauty & personal care",
+        "name": "Discover a new scent"
+      },
+      "source": {
+        "id": "1547887538-e3a2f32cb1cc",
+        "url": "https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&fit=crop&w=600&h=900&q=80",
+        "size": 71022,
+        "hash": "e88484085198708d7042c529184afe72f25e19316a7fbe11bcee772f354c21ac"
+      }
+    },
+    {
+      "case": {
+        "id": "real-case-18",
+        "strategy": "seedance",
+        "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&h=900&q=80",
+        "industry": "Beauty & personal care",
+        "name": "A natural beauty moment"
+      },
+      "source": {
+        "id": "1524504388940-b1c1722653e1",
+        "url": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&h=900&q=80",
+        "size": 43571,
+        "hash": "0958b66775c28b8c279b8fcaff244d7868d2a826018596e9535d53ddf781b177"
+      }
+    }
+  ]
+}
