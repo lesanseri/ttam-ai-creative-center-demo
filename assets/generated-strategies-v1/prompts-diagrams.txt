@@ -1,0 +1,25 @@
+Built-in image_gen tool. Final set v1; generated 2026-11-02. Square originals resized/formatted to JPEG 512×512 with sips, no compositional edits.
+
+COMMON STANDARD
+Use case: infographic-diagram. ONE square 1:1 raster strategy thumbnail in a consistent premium software illustration family. White/pale gray background, TTAM teal rgb(16,156,152) accents, charcoal outlines, subtle dimensional shadows. Bold clean shapes, 8% outer margin, readable at 74px. Use only abstract rounded video frames with simple mountain-and-sun placeholder icons, never photography. ABSOLUTELY NO PRODUCTS, bottles, perfume, packages, people, real objects, logos, titles or watermark.
+
+OVERLAY
+PRIMARY MEANING: Visual overlay. A large vertical video placeholder frame occupies center. Add two prominent teal annotation callout capsules with short thick blank lines, pointing into different areas of the frame, plus a teal caption strip across its lower area. No words.
+
+AUDIO
+PRIMARY MEANING: Audio refresh. One large rounded vertical video placeholder with simple mountain and sun icon. A prominent teal waveform strip spans below the frame, and an unmistakable teal microphone icon overlaps its lower right. No words or letters.
+
+REMIX
+PRIMARY MEANING: Remix generation. Three small separate clip frames across upper half, each with a different simple geometric video placeholder icon (mountain/sun, circle, diagonal landscape). A thick teal downward arrow connects them to one large new video frame below, with a clearly visible three-block editing timeline. Teal blocks alternate light gray and charcoal, with tiny scissors symbol optional. No words.
+
+QUALITY
+PRIMARY MEANING: Video quality enhancement. Two large rounded rectangular video frames side by side. Left contains a visibly coarse pixelated mountain and sun placeholder, right contains the identical mountain and sun geometry but extremely crisp teal lines. A single strong teal arrow between them and a small four-point sparkle at top-right of crisp frame. No words, no letters, no split screen photo.
+
+AD CARD
+PRIMARY MEANING: Generate ad card. One large vertical rounded video frame with simple teal mountain-and-sun placeholder. A separate prominent rounded information card overlays the lower part: left a small abstract geometric thumbnail, right two thick charcoal short lines and one teal short line, bottom a broad teal blank pill. The information card should clearly feel added on top of the video. No actual products or objects, no words or numbers.
+
+CTA
+PRIMARY MEANING: CTA enhancement. One large vertical rounded video placeholder with teal mountain-and-sun icon. Across bottom of video put an unmistakably large vivid teal rounded rectangular call-to-action button with only a simple white right-pointing arrow inside, no words. A prominent charcoal mouse pointer clicks the button, with two small teal click rays. The call-to-action button is the dominant communication. No other text or products.
+
+TRANSLATE
+PRIMARY MEANING: Translate and dub. One large rounded vertical video placeholder with mountain-and-sun icon. Two very prominent overlapping language speech bubbles across lower half: left white bubble with charcoal letters EN, right teal bubble with white letters ES. A simple right arrow connects the bubbles. A short tiny waveform line below bubbles communicates dubbing. Only text allowed is exactly EN and ES. No title or product.
