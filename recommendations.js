@@ -8,11 +8,11 @@ const metricStrategyRecommendations={
  bounce:{title:'Give viewers a reason to stay',intro:'Refresh the opening, sound and visual clarity to give viewers a stronger reason to keep watching.',strategies:['remix','audio','enhance-quality']}
 };
 const recStrategySamples={
- 'enhance-carousel':['generated-strategies-v1/carousel.svg'],
- 'enhance-background':['generated-strategies-v1/background.svg'],
- 'enhance-resize':['generated-strategies-v1/resize.svg'],
- 'enhance-product-display':['generated-strategies-v1/product-display.svg'],
- 'enhance-image-quality':['generated-strategies-v1/image-quality.svg'],
+ 'enhance-carousel':["overlay-bag.png", "remix-denim.png", "overlay-beauty.png"],
+ 'enhance-background':["seedance-fragrance.png", "overlay-drink.png", "overlay-bag.png"],
+ 'enhance-resize':["audio-running.png", "remix-denim.png", "remix-laundry.png"],
+ 'enhance-product-display':["seedance-fragrance.png", "overlay-bag.png", "audio-skincare.png"],
+ 'enhance-image-quality':["overlay-beauty.png", "overlay-drink.png", "remix-denim.png"],
 
  'enhance-ad-card':['overlay-beauty.png','overlay-drink.png','overlay-bag.png'],
  'enhance-cta':['remix-denim.png','overlay-bag.png','overlay-drink.png'],
@@ -39,7 +39,7 @@ const recDiagnosticExamples={
 };
 function recDiagnosticHTML(id,metricId){const example={...recDiagnosticExamples[id]};if(id==='overlay'&&metricId==='cvr'){example.metric='CVR';example.lift='+5–10%';}if(id==='remix'&&metricId==='cpa'){example.diagnosis='Repeated creative sequences may be losing effectiveness as CPA rises.';example.action='Remix proven product demonstrations, selling points and calls to action into fresh versions.';example.metric='CPA';example.lift='−5–10%';}if(id==='remix'&&metricId==='spend'){example.metric='Budget utilization';example.lift='+6–12%';}return '<div class="rec-diagnostic"><span class="rec-diagnostic-label">Example diagnosis</span><p>'+esc(example.diagnosis)+'</p><p class="rec-diagnostic-action">'+esc(example.action)+'</p><div class="rec-estimated-lift"><span>Estimated '+esc(example.metric)+' improvement</span><b>'+esc(example.lift)+'</b></div><small class="rec-estimate-basis">Illustrative estimate · validate with a test</small></div>';}
 let recommendationReturnFocus=null;
-function recSamplesHTML(id){return (recStrategySamples[id]||[]).map((file,i)=>'<button type="button" class="rec-sample" data-rec-sample="'+id+'|'+i+'" aria-label="Preview '+esc(creativeStrategy(id).name)+' sample '+(i+1)+'"><img src="'+scAsset(file)+'" alt="'+esc(creativeStrategy(id).name)+' sample '+(i+1)+'" loading="lazy">'+(id.startsWith('enhance-')?enhancementDecoration(id.slice(8)):'')+'<span class="rec-sample-play">'+scIcon('play')+'</span></button>').join('');}
+function recSamplesHTML(id){return (recStrategySamples[id]||[]).map((file,i)=>'<button type="button" class="rec-sample" data-rec-sample="'+id+'|'+i+'" aria-label="Preview '+esc(creativeStrategy(id).name)+' sample '+(i+1)+'"><img src="'+scAsset(file)+'" alt="'+esc(creativeStrategy(id).name)+' sample '+(i+1)+'" loading="lazy">'+'<span class="rec-sample-play">'+scIcon('play')+'</span></button>').join('');}
 function recStrategyCardHTML(id,metricId){const s=creativeStrategy(id),description=s.description;return '<article class="rec-strategy-card" data-rec-card="'+id+'"><div class="rec-strategy-top"><h3>'+esc(s.name)+'</h3><label class="rec-strategy-toggle"><input type="checkbox" name="strategies" value="'+id+'" checked aria-label="Use '+esc(s.name)+'"><span aria-hidden="true"></span></label></div>'+recDiagnosticHTML(id,metricId)+'<button class="rec-demo-link" type="button" data-rec-demo="'+id+'">See details and demo '+scIcon('next')+'</button><div class="rec-samples-heading">Sample videos</div><div class="rec-samples">'+recSamplesHTML(id)+'</div></article>';}
 function openMetricStrategyRecommendations(id){
  const config=metricStrategyRecommendations[id],metric=overviewMetrics.find(m=>m.id===id);if(!config||!metric?.recommendation)return;
