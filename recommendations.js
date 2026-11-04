@@ -1,11 +1,18 @@
+function recStrategyIllustration(id){return 'generated-strategies-v1/'+(['enhance-carousel','enhance-background','enhance-resize','enhance-product-display','enhance-image-quality'].includes(id)?id.slice(8)+'.svg':id+'.jpg');}
 const metricStrategyRecommendations={
  cpa:{title:'Refresh your creatives with proven elements',intro:'Creative fatigue may be increasing CPA. Remix your high-converting product demonstrations, selling points and calls to action into fresh versions.',strategies:['remix']},
  spend:{title:'Expand your creative coverage',intro:'When creative variety or language coverage limits delivery, try more versions of your existing videos.',strategies:['remix','enhance-translate']},
- ctr:{title:'Improve your click-through rate',intro:'Make your product, key message and next step easier to notice. Choose which improvements to try.',strategies:['enhance-ad-card','enhance-cta','overlay']},
- cvr:{title:'Make your product benefits clearer',intro:'Highlight your selling points and adapt your message to your audience’s language.',strategies:['overlay','enhance-translate']},
+ ctr:{title:'Improve your click-through rate',intro:'Make your product, key message and next step easier to notice. Choose which improvements to try.',strategies:['enhance-carousel','enhance-background','enhance-resize','enhance-ad-card','enhance-cta','overlay','audio','remix']},
+ cvr:{title:'Make your product benefits clearer',intro:'Highlight your selling points and adapt your message to your audience’s language.',strategies:['enhance-product-display','enhance-image-quality','enhance-quality','enhance-translate']},
  bounce:{title:'Give viewers a reason to stay',intro:'Refresh the opening, sound and visual clarity to give viewers a stronger reason to keep watching.',strategies:['remix','audio','enhance-quality']}
 };
 const recStrategySamples={
+ 'enhance-carousel':['generated-strategies-v1/carousel.svg'],
+ 'enhance-background':['generated-strategies-v1/background.svg'],
+ 'enhance-resize':['generated-strategies-v1/resize.svg'],
+ 'enhance-product-display':['generated-strategies-v1/product-display.svg'],
+ 'enhance-image-quality':['generated-strategies-v1/image-quality.svg'],
+
  'enhance-ad-card':['overlay-beauty.png','overlay-drink.png','overlay-bag.png'],
  'enhance-cta':['remix-denim.png','overlay-bag.png','overlay-drink.png'],
  'enhance-translate':['audio-skincare.png','overlay-beauty.png','audio-running.png'],
@@ -15,6 +22,12 @@ const recStrategySamples={
  remix:['remix-denim.png','remix-laundry.png','audio-running.png']
 };
 const recDiagnosticExamples={
+ 'enhance-carousel':{"diagnosis": "Review how this creative presents your product.", "action": "Add text and stickers to product images.", "metric": "CTR", "lift": "+5\u201310%"},
+ 'enhance-background':{"diagnosis": "Review how this creative presents your product.", "action": "Create backgrounds with colors and patterns for product images.", "metric": "CTR", "lift": "+5\u201310%"},
+ 'enhance-resize':{"diagnosis": "Review how this creative presents your product.", "action": "Adapt image framing to use the available screen space.", "metric": "CTR", "lift": "+5\u201310%"},
+ 'enhance-product-display':{"diagnosis": "Review how this creative presents your product.", "action": "Choose how catalog products are displayed so shoppers can find relevant items.", "metric": "CVR", "lift": "+5\u201310%"},
+ 'enhance-image-quality':{"diagnosis": "Review how this creative presents your product.", "action": "Improve image resolution and clarity to make product details easier to see.", "metric": "CVR", "lift": "+5\u201310%"},
+
  'enhance-translate':{diagnosis:'English-only videos in Thailand and Indonesia are converting below your other markets.',action:'Add Thai and Indonesian voiceovers and captions.',metric:'CVR',lift:'+8–15%'},
  remix:{diagnosis:'The same opening sequence is repeated across your active videos, limiting creative variety.',action:'Move the product demonstration forward and test fresh cuts.',metric:'2-second bounce rate',lift:'−6–10%'},
  audio:{diagnosis:'The opening voiceover starts after the product appears, leaving the first seconds without a clear message.',action:'Bring the voiceover forward and refresh the audio rhythm.',metric:'2-second bounce rate',lift:'−4–8%'},
@@ -41,7 +54,7 @@ function openRecPreview(value,isDemo){
  const [id,index]=value.split('|'),strategy=creativeStrategy(id);if(!strategy)return;
  let dialog=document.querySelector('#rec-preview-dialog');if(!dialog){dialog=document.createElement('dialog');dialog.id='rec-preview-dialog';dialog.className='rec-preview-dialog';document.body.append(dialog);dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close();});}
  const enhancement=id.startsWith('enhance-')?aiEnhancementCapabilities.find(s=>'enhance-'+s.id===id):null;
- const file=isDemo?('generated-strategies-v1/'+id+'.jpg'):recStrategySamples[id]?.[Number(index)];
+ const file=isDemo?recStrategyIllustration(id):recStrategySamples[id]?.[Number(index)];
  dialog.setAttribute('aria-label',strategy.name+(isDemo?' details and demo':' sample preview'));
  dialog.innerHTML='<button class="rec-close" type="button" data-rec-preview-close aria-label="Close preview">'+scIcon('close')+'</button><div class="rec-preview-layout"><div class="rec-preview-image">'+(false?enhancementComparisonHTML(enhancement):'<img src="'+scAsset(file)+'" alt="'+esc(strategy.name)+(isDemo?' demo':' sample')+'">'+(!isDemo&&enhancement?enhancementDecoration(enhancement.id):''))+'</div><div class="rec-preview-copy"><span class="rec-eyebrow">'+(isDemo?'How it works':'Sample creative')+'</span><h2>'+esc(strategy.name)+'</h2><p>'+esc(strategy.description)+'</p>'+(isDemo?'<dl><dt>What changes</dt><dd>'+esc(strategy.change||enhancement.changes)+'</dd></dl>':'')+'<button class="btn primary" type="button" data-rec-preview-close>Back to recommendations</button></div></div>';
  dialog.showModal();
