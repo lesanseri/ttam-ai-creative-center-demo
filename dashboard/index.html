@@ -138,21 +138,129 @@ window.addEventListener('scroll',()=>document.body.classList.toggle('scrolled',w
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(!$('#modalBackdrop').classList.contains('hidden'))closeModal();else if(!$('#chatPanel').classList.contains('hidden'))$('#chatPanel').classList.add('hidden');else if($('#aiDrawer').classList.contains('open'))closeAI();else if($('#ruleDrawer').classList.contains('open'))closeDrawer();else closePopovers()}if(e.key==='Tab'){const root=!$('#modalBackdrop').classList.contains('hidden')?$('.modal'):$('#aiDrawer').classList.contains('open')?$('#aiDrawer'):$('#ruleDrawer').classList.contains('open')?$('#ruleDrawer'):null;if(root){const els=[...root.querySelectorAll('button,input,select,textarea,[tabindex="0"]')].filter(el=>!el.disabled&&el.getClientRects().length);const first=els[0],last=els[els.length-1];if(e.shiftKey&&document.activeElement===first){last.focus();e.preventDefault()}else if(!e.shiftKey&&document.activeElement===last){first.focus();e.preventDefault()}}}});
 // AI creative feature controls. All settings remain in this browser.
 const aiGroups=[
- {id:'recommended',name:'Recommended Creatives',icon:'✦',description:'Generate fresh creative from the assets you already have.',features:[
- {id:'remix',name:'Strategy 1',description:'Recut your best videos with fresh hooks and pacing.',detail:'Recut your best videos into fresh variations with new hooks and pacing, so the ad never goes stale.',bullets:['Create new cuts from existing video assets.','Explore different hooks, scenes, and pacing.','Keep the original message and product in focus.']},
- {id:'script',name:'Strategy 2',description:'Turn your product story into ready-to-use video variations.',detail:'Transform a product brief or script into new video creatives, using your existing brand and product assets.',bullets:['Start with your product story and key messages.','Combine relevant scenes, captions, and transitions.','Generate creative variations for eligible ads.']},
- {id:'imagevideo',name:'Strategy 3',description:'Bring static product images to life with motion.',detail:'Turn product images into short videos with subtle movement and transitions, giving your existing assets another way to tell your story.',bullets:['Use images already available in your creative library.','Add movement and transitions around the product.','Create video variations for eligible placements.']}
- ]},
- {id:'enhancement',name:'Auto Enhancement',icon:'☷',description:'Refresh the details while keeping your core creative intact.',features:[
- {id:'overlay',name:'Auto Enhancement 1',description:'Add branded logos, subtitles, and end cards to your videos.',detail:'Add branded logo, subtitles and an end card onto existing footage, without touching the core video.',bullets:['Add relevant captions and subtitles.','Include your logo and brand elements.','Finish with a clear product or call-to-action end card.']},
- {id:'audio',name:'Auto Enhancement 2',description:'Refresh the soundtrack and keep your original voiceover.',detail:'Swap in approved, on-trend music while keeping the original voiceover and dialogue.',bullets:['Use music approved for eligible ads.','Preserve the original voiceover and dialogue.','Balance the soundtrack with your existing audio.']},
- {id:'crop',name:'Auto Enhancement 3',description:'Adapt your video to each placement without losing the action.',detail:'Automatically reframe video for different aspect ratios, keeping the product, subject, and important visual content in view.',bullets:['Create versions for supported placement sizes.','Keep the main subject and product in focus.','Adjust the frame without changing the core story.']}
- ]},
- {id:'carousel',name:'Carousel',icon:'▤',description:'Turn product images into more ways to tell your story.',features:[
- {id:'carouselgen',name:'Carousel 1',description:'Build a cohesive carousel from your product images.',detail:'Arrange your product assets into a carousel that tells a clear story from the first card to the last.',bullets:['Use existing product images as a starting point.','Arrange cards into a consistent visual sequence.','Generate carousel variations for eligible ads.']},
- {id:'variations',name:'Carousel 2',description:'Explore fresh backgrounds and looks for your products.',detail:'Create new visual variations from your existing product images, with different backgrounds and compositions.',bullets:['Keep the product as the center of the creative.','Explore alternative backgrounds and compositions.','Use variations in eligible carousel ads.']},
- {id:'expand',name:'Carousel 3',description:'Extend images to fit your carousel format naturally.',detail:'Expand the edges of a product image to fit supported carousel formats while preserving the original product and visual style.',bullets:['Fill the area around an existing product image.','Adapt assets to supported carousel aspect ratios.','Keep the original product and key details intact.']}
- ]}
+ {
+  "id": "enhancement",
+  "name": "Enhance Existing Creatives",
+  "icon": "☷",
+  "description": "Improve existing assets while keeping your core message intact.",
+  "features": [
+   {
+    "id": "overlay",
+    "name": "Enhancement 1",
+    "description": "Add branded logos, subtitles, and end cards to your videos.",
+    "detail": "Add branded logo, subtitles and an end card onto existing footage, without touching the core video.",
+    "bullets": [
+     "Add relevant captions and subtitles.",
+     "Include your logo and brand elements.",
+     "Finish with a clear product or call-to-action end card."
+    ]
+   },
+   {
+    "id": "audio",
+    "name": "Enhancement 2",
+    "description": "Refresh the soundtrack and keep your original voiceover.",
+    "detail": "Swap in approved, on-trend music while keeping the original voiceover and dialogue.",
+    "bullets": [
+     "Use music approved for eligible ads.",
+     "Preserve the original voiceover and dialogue.",
+     "Balance the soundtrack with your existing audio."
+    ]
+   },
+   {
+    "id": "variations",
+    "name": "Enhancement 3",
+    "description": "Explore fresh backgrounds and looks for your products.",
+    "detail": "Create new visual variations from your existing product images, with different backgrounds and compositions.",
+    "bullets": [
+     "Keep the product as the center of the creative.",
+     "Explore alternative backgrounds and compositions.",
+     "Use variations in eligible carousel ads."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "recommended",
+  "name": "Generate More Creatives",
+  "icon": "✦",
+  "description": "Create fresh creative variations from your existing assets.",
+  "features": [
+   {
+    "id": "remix",
+    "name": "Strategy 1",
+    "description": "Recut your best videos with fresh hooks and pacing.",
+    "detail": "Recut your best videos into fresh variations with new hooks and pacing, so the ad never goes stale.",
+    "bullets": [
+     "Create new cuts from existing video assets.",
+     "Explore different hooks, scenes, and pacing.",
+     "Keep the original message and product in focus."
+    ]
+   },
+   {
+    "id": "script",
+    "name": "Strategy 2",
+    "description": "Turn your product story into ready-to-use video variations.",
+    "detail": "Transform a product brief or script into new video creatives, using your existing brand and product assets.",
+    "bullets": [
+     "Start with your product story and key messages.",
+     "Combine relevant scenes, captions, and transitions.",
+     "Generate creative variations for eligible ads."
+    ]
+   },
+   {
+    "id": "imagevideo",
+    "name": "Strategy 3",
+    "description": "Bring static product images to life with motion.",
+    "detail": "Turn product images into short videos with subtle movement and transitions, giving your existing assets another way to tell your story.",
+    "bullets": [
+     "Use images already available in your creative library.",
+     "Add movement and transitions around the product.",
+     "Create video variations for eligible placements."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "carousel",
+  "name": "Adapt Creative Formats",
+  "icon": "▤",
+  "description": "Adapt your assets to different placements, sizes, and ad formats.",
+  "features": [
+   {
+    "id": "crop",
+    "name": "Format 1",
+    "description": "Adapt your video to each placement without losing the action.",
+    "detail": "Automatically reframe video for different aspect ratios, keeping the product, subject, and important visual content in view.",
+    "bullets": [
+     "Create versions for supported placement sizes.",
+     "Keep the main subject and product in focus.",
+     "Adjust the frame without changing the core story."
+    ]
+   },
+   {
+    "id": "expand",
+    "name": "Format 2",
+    "description": "Extend images to fit your carousel format naturally.",
+    "detail": "Expand the edges of a product image to fit supported carousel formats while preserving the original product and visual style.",
+    "bullets": [
+     "Fill the area around an existing product image.",
+     "Adapt assets to supported carousel aspect ratios.",
+     "Keep the original product and key details intact."
+    ]
+   },
+   {
+    "id": "carouselgen",
+    "name": "Format 3",
+    "description": "Build a cohesive carousel from your product images.",
+    "detail": "Arrange your product assets into a carousel that tells a clear story from the first card to the last.",
+    "bullets": [
+     "Use existing product images as a starting point.",
+     "Arrange cards into a consistent visual sequence.",
+     "Generate carousel variations for eligible ads."
+    ]
+   }
+  ]
+ }
 ];
 const allAI=aiGroups.flatMap(g=>g.features);let aiSettings=Object.fromEntries(allAI.map(f=>[f.id,f.id==='remix']));
 try{const stored=JSON.parse(localStorage.getItem('tiktok-ai-features')||'null');if(stored&&typeof stored==='object')allAI.forEach(f=>{if(typeof stored[f.id]==='boolean')aiSettings[f.id]=stored[f.id]})}catch{}
